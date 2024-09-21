@@ -10,7 +10,7 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --main-color: aqua;
+    --main-color: rgb(149, 255, 0);
     --big-font: 6.6rem;
     --p-font: 1rem;
 }
@@ -41,8 +41,82 @@ header {
 
 .navlist a {
     display: inline-block;
-    margin: 0.35px;
+    margin: 0 25px;
     color: var(--text-color);
     font-size: var(--p-font);
     transition: all .6s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 9px 24px;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 7px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .6s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-5px);
+    border: 2px solid var(--main-color);
+}
+
+#menu-icon {
+    font-size: 42px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+section {
+    padding: 0 20px;
+    /* Adjust padding to your preference */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* Use flexbox to align items */
+    flex-direction: column;
+    /* Align items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    justify-content: center;
+    /* Center items vertically */
+    gap: 2rem;
+    /* Space between elements */
+    text-align: left;
+    /* Align text to the left */
+    padding-left: 80px;
+    /* Optional: Add padding on the left */
+}
+
+.hero-text h2 {
+    font-size: 4rem;
+    /* Adjust this value for a larger or smaller heading */
+    margin: 20px 0;
+    /* Maintain spacing around the heading */
+}
+
+.hero-text p {
+    font-size: 16px;
+    /* Font size */
+    margin: 20px 0;
+    /* Spacing around the paragraph */
+    color: #878C91;
+    /* Correct property to set text color */
 }
